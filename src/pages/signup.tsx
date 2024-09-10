@@ -25,7 +25,7 @@ export const Signup = () => {
           <Image src="/images/insta.png" alt="Instagram_Page" />
         </a>
 
-        <a href="https://www.instagram.com/saarang_iitmadras/" style={{ marginRight: 60 }} className="social-image">
+        <a href="https://www.instagram.com/saarang_iitmadras/" className="social-image end-image">
           <Image src="/images/insta.png" alt="Instagram_Page" />
         </a>
       </div>

@@ -6,6 +6,7 @@ import "./design/form_style.css";
 export const MyForm = () => {
   interface FormData {
     fullName: string;
+
     age: number;
   }
 
@@ -30,17 +31,17 @@ export const MyForm = () => {
     <div>
       <div className="bg-image d-flex justify-content-center align-items-center vh-100">
         <form onSubmit={handleSubmit(onEntry)} className="card p-4 shadow-sm" id="container1">
-          <h2 className="text" id="title" style={{ textAlign: "left", marginLeft: 20, marginBottom: 0 }}>
+          <h2 className="text title1" id="title" style={{ textAlign: "left", marginBottom: 0 }}>
             SIGNUP
           </h2>
-          <h3 className="text mb-4" style={{ fontSize: 20, textAlign: "left", marginLeft: 20, marginBottom: 0 }}>
+          <h3 className="text title2" style={{ textAlign: "left" }}>
             Register using smail for amazing Discounts
           </h3>
 
           <input
             type="text"
             placeholder="Enter your name*"
-            className={`form-control height mt-3 ${errors.fullName ? "is-invalid" : ""}`} // Add 'is-invalid' class if there's an error
+            className={`form-control height ${errors.fullName ? "is-invalid" : ""}`} // Add 'is-invalid' class if there's an error
             style={{ borderRadius: 50 }}
             {...register("fullName")}
           />
@@ -49,7 +50,7 @@ export const MyForm = () => {
           <input
             type="text"
             placeholder="Enter your name*"
-            className={`form-control height mt-3 ${errors.fullName ? "is-invalid" : ""}`}
+            className={`form-control height ${errors.fullName ? "is-invalid" : ""}`}
             style={{ borderRadius: 50 }}
             {...register("fullName")}
           />
@@ -58,7 +59,7 @@ export const MyForm = () => {
           <input
             type="text"
             placeholder="Enter your name*"
-            className={`form-control height mt-3 ${errors.fullName ? "is-invalid" : ""}`}
+            className={`form-control height ${errors.fullName ? "is-invalid" : ""}`}
             style={{ borderRadius: 50 }}
             {...register("fullName")}
           />
@@ -67,7 +68,7 @@ export const MyForm = () => {
           <input
             type="text"
             placeholder="Enter your name*"
-            className={`form-control height mt-3 ${errors.fullName ? "is-invalid" : ""}`}
+            className={`form-control height ${errors.fullName ? "is-invalid" : ""}`}
             style={{ borderRadius: 50 }}
             {...register("fullName")}
           />
@@ -76,7 +77,7 @@ export const MyForm = () => {
           <input
             type="number"
             placeholder="Enter your Age*"
-            className={'form-control height mt-3 ${errors.fullName ? "is-invalid" : ""}'}
+            className={'form-control height ${errors.fullName ? "is-invalid" : ""}'}
             style={{ borderRadius: 50 }}
             {...register("age")}
           />
